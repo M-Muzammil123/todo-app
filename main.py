@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from model.todo_model import Todo
-from config.database import get
+from config.database import get_db
 from pydantic import BaseModel
 from datetime import datetime
 import os
